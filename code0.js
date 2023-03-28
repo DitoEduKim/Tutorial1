@@ -15,6 +15,10 @@ gdjs.homeCode.GDmainObjects1= [];
 gdjs.homeCode.GDmainObjects2= [];
 gdjs.homeCode.GDStartObjects1= [];
 gdjs.homeCode.GDStartObjects2= [];
+gdjs.homeCode.GDScrollableAreaObjects1= [];
+gdjs.homeCode.GDScrollableAreaObjects2= [];
+gdjs.homeCode.GDNewTextObjects1= [];
+gdjs.homeCode.GDNewTextObjects2= [];
 
 gdjs.homeCode.conditionTrue_0 = {val:false};
 gdjs.homeCode.condition0IsTrue_0 = {val:false};
@@ -36,6 +40,42 @@ gdjs.homeCode.condition0IsTrue_0.val = false;
 gdjs.homeCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 }if (gdjs.homeCode.condition0IsTrue_0.val) {
 {gdjs.evtTools.sound.playMusic(runtimeScene, "7e1d36e129fb15e3f4bfec38fe5338806e72c214363f3cf85defaf925890e0aa_The Celebrated Minuet for Piano.aac", true, 100, 1);
+}}
+
+}
+
+
+{
+
+
+gdjs.homeCode.condition0IsTrue_0.val = false;
+gdjs.homeCode.condition1IsTrue_0.val = false;
+{
+gdjs.homeCode.condition0IsTrue_0.val = gdjs.evtTools.input.isScrollingDown(runtimeScene);
+}if ( gdjs.homeCode.condition0IsTrue_0.val ) {
+{
+gdjs.homeCode.condition1IsTrue_0.val = gdjs.evtTools.camera.getCameraY(runtimeScene, "", 0) < 400;
+}}
+if (gdjs.homeCode.condition1IsTrue_0.val) {
+{gdjs.evtTools.camera.setCameraY(runtimeScene, gdjs.evtTools.camera.getCameraY(runtimeScene, "", 0) + (20), "", 0);
+}}
+
+}
+
+
+{
+
+
+gdjs.homeCode.condition0IsTrue_0.val = false;
+gdjs.homeCode.condition1IsTrue_0.val = false;
+{
+gdjs.homeCode.condition0IsTrue_0.val = gdjs.evtTools.input.isScrollingUp(runtimeScene);
+}if ( gdjs.homeCode.condition0IsTrue_0.val ) {
+{
+gdjs.homeCode.condition1IsTrue_0.val = gdjs.evtTools.camera.getCameraY(runtimeScene, "", 0) >= 50;
+}}
+if (gdjs.homeCode.condition1IsTrue_0.val) {
+{gdjs.evtTools.camera.setCameraY(runtimeScene, gdjs.evtTools.camera.getCameraY(runtimeScene, "", 0) - (20), "", 0);
 }}
 
 }
@@ -142,6 +182,10 @@ gdjs.homeCode.GDmainObjects1.length = 0;
 gdjs.homeCode.GDmainObjects2.length = 0;
 gdjs.homeCode.GDStartObjects1.length = 0;
 gdjs.homeCode.GDStartObjects2.length = 0;
+gdjs.homeCode.GDScrollableAreaObjects1.length = 0;
+gdjs.homeCode.GDScrollableAreaObjects2.length = 0;
+gdjs.homeCode.GDNewTextObjects1.length = 0;
+gdjs.homeCode.GDNewTextObjects2.length = 0;
 
 gdjs.homeCode.eventsList0(runtimeScene);
 

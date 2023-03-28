@@ -104,6 +104,42 @@ gdjs.copyArray(runtimeScene.getObjects("tab17"), gdjs.Scene3Code.GDtab17Objects1
 
 {
 
+
+gdjs.Scene3Code.condition0IsTrue_0.val = false;
+gdjs.Scene3Code.condition1IsTrue_0.val = false;
+{
+gdjs.Scene3Code.condition0IsTrue_0.val = gdjs.evtTools.input.isScrollingDown(runtimeScene);
+}if ( gdjs.Scene3Code.condition0IsTrue_0.val ) {
+{
+gdjs.Scene3Code.condition1IsTrue_0.val = gdjs.evtTools.camera.getCameraY(runtimeScene, "", 0) < 400;
+}}
+if (gdjs.Scene3Code.condition1IsTrue_0.val) {
+{gdjs.evtTools.camera.setCameraY(runtimeScene, gdjs.evtTools.camera.getCameraY(runtimeScene, "", 0) + (20), "", 0);
+}}
+
+}
+
+
+{
+
+
+gdjs.Scene3Code.condition0IsTrue_0.val = false;
+gdjs.Scene3Code.condition1IsTrue_0.val = false;
+{
+gdjs.Scene3Code.condition0IsTrue_0.val = gdjs.evtTools.input.isScrollingUp(runtimeScene);
+}if ( gdjs.Scene3Code.condition0IsTrue_0.val ) {
+{
+gdjs.Scene3Code.condition1IsTrue_0.val = gdjs.evtTools.camera.getCameraY(runtimeScene, "", 0) >= 50;
+}}
+if (gdjs.Scene3Code.condition1IsTrue_0.val) {
+{gdjs.evtTools.camera.setCameraY(runtimeScene, gdjs.evtTools.camera.getCameraY(runtimeScene, "", 0) - (20), "", 0);
+}}
+
+}
+
+
+{
+
 gdjs.copyArray(runtimeScene.getObjects("b1"), gdjs.Scene3Code.GDb1Objects1);
 
 gdjs.Scene3Code.condition0IsTrue_0.val = false;
